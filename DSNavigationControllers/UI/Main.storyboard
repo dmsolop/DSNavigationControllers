@@ -21,7 +21,7 @@
         <scene sceneID="IxL-e6-KyD">
             <objects>
                 <navigationController id="SBV-Kx-F7q" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iJK-3V-dqp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iJK-3V-dqp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -82,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7o-qK-44H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-610.39999999999998" y="124.58770614692655"/>
+            <point key="canvasLocation" x="-614" y="125"/>
         </scene>
         <!--View Controller First-->
         <scene sceneID="DQf-q4-YWw">

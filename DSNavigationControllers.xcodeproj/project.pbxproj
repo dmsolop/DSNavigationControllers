@@ -20,6 +20,8 @@
 		2C8727ED1E95241700F389B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8727E61E95241700F389B0 /* ViewController.m */; };
 		2C8727FB1E95320900F389B0 /* DSMyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8727FA1E95320900F389B0 /* DSMyView.m */; };
 		2C8727FD1E95322700F389B0 /* DSMyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8727FC1E95322700F389B0 /* DSMyView.xib */; };
+		816BA03A1E955A8A00E96385 /* DSMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816BA0381E955A8A00E96385 /* DSMyViewController.m */; };
+		816BA03B1E955A8A00E96385 /* DSMyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 816BA0391E955A8A00E96385 /* DSMyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,9 @@
 		2C8727F91E95320900F389B0 /* DSMyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMyView.h; sourceTree = "<group>"; };
 		2C8727FA1E95320900F389B0 /* DSMyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSMyView.m; sourceTree = "<group>"; };
 		2C8727FC1E95322700F389B0 /* DSMyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSMyView.xib; sourceTree = "<group>"; };
+		816BA0371E955A8A00E96385 /* DSMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMyViewController.h; sourceTree = "<group>"; };
+		816BA0381E955A8A00E96385 /* DSMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSMyViewController.m; sourceTree = "<group>"; };
+		816BA0391E955A8A00E96385 /* DSMyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSMyViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +144,9 @@
 				2C8727F91E95320900F389B0 /* DSMyView.h */,
 				2C8727FA1E95320900F389B0 /* DSMyView.m */,
 				2C8727FC1E95322700F389B0 /* DSMyView.xib */,
+				816BA0371E955A8A00E96385 /* DSMyViewController.h */,
+				816BA0381E955A8A00E96385 /* DSMyViewController.m */,
+				816BA0391E955A8A00E96385 /* DSMyViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8727E71E95241700F389B0 /* DSAnotherStoryboard.storyboard in Resources */,
+				816BA03B1E955A8A00E96385 /* DSMyViewController.xib in Resources */,
 				2C2C98E01E8FD0C30069570A /* LaunchScreen.storyboard in Resources */,
 				2C2C98DD1E8FD0C30069570A /* Assets.xcassets in Resources */,
 				2C8727E81E95241700F389B0 /* Main.storyboard in Resources */,
@@ -219,6 +228,7 @@
 				2C8727EC1E95241700F389B0 /* DSViewControllerSecond.m in Sources */,
 				2C8727EA1E95241700F389B0 /* DSModalViewController.m in Sources */,
 				2C2C98EA1E8FD1430069570A /* AppDelegate.m in Sources */,
+				816BA03A1E955A8A00E96385 /* DSMyViewController.m in Sources */,
 				2C8727EB1E95241700F389B0 /* DSViewControllerFirst.m in Sources */,
 				2C8727ED1E95241700F389B0 /* ViewController.m in Sources */,
 				2C8727FB1E95320900F389B0 /* DSMyView.m in Sources */,
