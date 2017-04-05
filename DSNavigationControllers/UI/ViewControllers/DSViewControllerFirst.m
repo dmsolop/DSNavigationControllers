@@ -17,9 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = [NSString stringWithFormat:@"%@", self.class];
-    
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"VCModal" style:UIBarButtonItemStylePlain target:self action:@selector(actionGoToModalVC:)];
-    
     self.navigationItem.rightBarButtonItem = item;
 }
 

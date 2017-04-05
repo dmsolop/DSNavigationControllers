@@ -17,12 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.navigationItem.title = [NSString stringWithFormat:@"%@", self.class];
-    
 }
-
-
 
 - (IBAction)showFromXib:(id)sender {
     DSMyViewController *viewController = [DSMyViewController new];
