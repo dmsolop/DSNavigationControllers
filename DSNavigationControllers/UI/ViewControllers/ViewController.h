@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)showFromXib:(id)sender;
 
 @end
 

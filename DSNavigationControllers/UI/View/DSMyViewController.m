@@ -17,13 +17,7 @@
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
-    [self xibSetup];
-    return self;
-}
-
-- (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    [self xibSetup];
+//    [self xibSetup];
     return self;
 }
 
@@ -34,18 +28,18 @@
     [super awakeFromNib];
 }
 
-- (UIView *)loadViewFromNib {
-    NSBundle *bandle = [NSBundle bundleForClass:[self class]];
-    UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class]) bundle:bandle];
-    UIView *view = [[nib instantiateWithOwner:self options:nil] firstObject];
-    return view;
-}
+//- (UIView *)loadViewFromNib {
+//    NSBundle *bandle = [NSBundle bundleForClass:[self class]];
+//    UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class]) bundle:bandle];
+//    UIView *view = [[nib instantiateWithOwner:self options:nil] firstObject];
+//    return view;
+//}
 
-- (void)xibSetup {
-    UIView *view = [self loadViewFromNib];
-    view.frame = self.bounds;
-    view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [self addSubview:view];
-}
+//- (void)xibSetup {
+//    UIView *view = [self loadViewFromNib];
+//    view.frame = self.bounds;
+//    view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//    [self addSubview:view];
+//}
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DSMyViewController.h"
 
 @interface ViewController ()
 
@@ -22,5 +23,10 @@
 }
 
 
+
+- (IBAction)showFromXib:(id)sender {
+    DSMyViewController *viewController = [DSMyViewController new];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
 
 @end
