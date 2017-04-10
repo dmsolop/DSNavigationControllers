@@ -17,6 +17,9 @@
 		2C8727EB1E95241700F389B0 /* DSViewControllerFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8727E21E95241700F389B0 /* DSViewControllerFirst.m */; };
 		2C8727EC1E95241700F389B0 /* DSViewControllerSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8727E41E95241700F389B0 /* DSViewControllerSecond.m */; };
 		2C8727ED1E95241700F389B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8727E61E95241700F389B0 /* ViewController.m */; };
+		2CA8D69E1E980F8B00AE5EAC /* DSAnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA8D69D1E980F8B00AE5EAC /* DSAnotherViewController.m */; };
+		2CBE300F1E9C37E500589244 /* DSAnotherRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE300E1E9C37E500589244 /* DSAnotherRootViewController.m */; };
+		2CBE30121E9C3A9D00589244 /* DSAnotherAfterRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBE30111E9C3A9D00589244 /* DSAnotherAfterRootViewController.m */; };
 		816BA03A1E955A8A00E96385 /* DSMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816BA0381E955A8A00E96385 /* DSMyViewController.m */; };
 		816BA03B1E955A8A00E96385 /* DSMyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 816BA0391E955A8A00E96385 /* DSMyViewController.xib */; };
 /* End PBXBuildFile section */
@@ -39,6 +42,12 @@
 		2C8727E41E95241700F389B0 /* DSViewControllerSecond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSViewControllerSecond.m; sourceTree = "<group>"; };
 		2C8727E51E95241700F389B0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2C8727E61E95241700F389B0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2CA8D69C1E980F8B00AE5EAC /* DSAnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAnotherViewController.h; sourceTree = "<group>"; };
+		2CA8D69D1E980F8B00AE5EAC /* DSAnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAnotherViewController.m; sourceTree = "<group>"; };
+		2CBE300D1E9C37E500589244 /* DSAnotherRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAnotherRootViewController.h; sourceTree = "<group>"; };
+		2CBE300E1E9C37E500589244 /* DSAnotherRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAnotherRootViewController.m; sourceTree = "<group>"; };
+		2CBE30101E9C3A9D00589244 /* DSAnotherAfterRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAnotherAfterRootViewController.h; sourceTree = "<group>"; };
+		2CBE30111E9C3A9D00589244 /* DSAnotherAfterRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAnotherAfterRootViewController.m; sourceTree = "<group>"; };
 		816BA0371E955A8A00E96385 /* DSMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMyViewController.h; sourceTree = "<group>"; };
 		816BA0381E955A8A00E96385 /* DSMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSMyViewController.m; sourceTree = "<group>"; };
 		816BA0391E955A8A00E96385 /* DSMyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSMyViewController.xib; sourceTree = "<group>"; };
@@ -124,6 +133,12 @@
 				2C8727E41E95241700F389B0 /* DSViewControllerSecond.m */,
 				2C8727E51E95241700F389B0 /* ViewController.h */,
 				2C8727E61E95241700F389B0 /* ViewController.m */,
+				2CA8D69C1E980F8B00AE5EAC /* DSAnotherViewController.h */,
+				2CA8D69D1E980F8B00AE5EAC /* DSAnotherViewController.m */,
+				2CBE300D1E9C37E500589244 /* DSAnotherRootViewController.h */,
+				2CBE300E1E9C37E500589244 /* DSAnotherRootViewController.m */,
+				2CBE30101E9C3A9D00589244 /* DSAnotherAfterRootViewController.h */,
+				2CBE30111E9C3A9D00589244 /* DSAnotherAfterRootViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -212,8 +227,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8727EC1E95241700F389B0 /* DSViewControllerSecond.m in Sources */,
+				2CBE30121E9C3A9D00589244 /* DSAnotherAfterRootViewController.m in Sources */,
 				2C8727EA1E95241700F389B0 /* DSModalViewController.m in Sources */,
 				2C2C98EA1E8FD1430069570A /* AppDelegate.m in Sources */,
+				2CBE300F1E9C37E500589244 /* DSAnotherRootViewController.m in Sources */,
+				2CA8D69E1E980F8B00AE5EAC /* DSAnotherViewController.m in Sources */,
 				816BA03A1E955A8A00E96385 /* DSMyViewController.m in Sources */,
 				2C8727EB1E95241700F389B0 /* DSViewControllerFirst.m in Sources */,
 				2C8727ED1E95241700F389B0 /* ViewController.m in Sources */,
