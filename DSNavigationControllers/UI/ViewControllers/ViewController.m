@@ -27,15 +27,16 @@
     viewController.title = NSStringFromClass(viewController.class);
 }
 
-- (IBAction)showFirstViewController:(UIButton *)sender {
-    DSMyViewController *viewController = [DSMyViewController new];
-    [self.navigationController pushViewController:viewController animated:YES];
-    viewController.title = NSStringFromClass(viewController.class);
-}
 
 - (IBAction)showAnotherStoryboard:(id)sender {
     UIViewController *anotherController = [[UIStoryboard storyboardWithName:@"DSAnotherStoryboard" bundle:nil] instantiateInitialViewController];
     [self.navigationController pushViewController:anotherController animated:YES];
+    anotherController.title = NSStringFromClass(anotherController.class);
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    id destinationController = segue.destinationViewController;
+    destinationController.titele =
 }
 
 @end
