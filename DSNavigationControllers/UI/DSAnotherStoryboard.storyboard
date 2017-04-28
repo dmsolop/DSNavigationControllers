@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WAE-CU-tvZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WAE-CU-tvZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,14 +24,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tE0-0i-lvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-180" y="105"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="sYp-gB-faa">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="F6k-BT-D9K" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Xz-JT-9rp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1230" y="-402"/>
         </scene>
         <!--Another View Controller-->
         <scene sceneID="W3Z-fe-ty3">
@@ -53,9 +45,6 @@
                                 <state key="normal" title="Back to main root controller">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="F6k-BT-D9K" kind="show" id="216-GP-JVF"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFq-32-hbl">
                                 <rect key="frame" x="81" y="305" width="213" height="56"/>
@@ -91,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.68955763110000001" green="0.86443131350000002" blue="0.42619326619999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Green" id="7k7-Di-20e"/>
+                    <tabBarItem key="tabBarItem" title="Green" badgeValue="3" id="7k7-Di-20e"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uo8-fa-s6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

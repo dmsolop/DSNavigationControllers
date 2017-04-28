@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "DSMyViewController.h"
+#import "DSViewControllerFirst.h"
+#import "DSViewControllerSecond.h"
 
 @interface ViewController ()
 
@@ -17,12 +19,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = [NSString stringWithFormat:@"%@", self.class];
 }
 
 - (IBAction)showFromXib:(id)sender {
     DSMyViewController *viewController = [DSMyViewController new];
     [self.navigationController pushViewController:viewController animated:YES];
+    viewController.title = NSStringFromClass(viewController.class);
+}
+
+- (IBAction)showFirstViewController:(UIButton *)sender {
+    DSMyViewController *viewController = [DSMyViewController new];
+    [self.navigationController pushViewController:viewController animated:YES];
+    viewController.title = NSStringFromClass(viewController.class);
+}
+
+- (IBAction)showAnotherStoryboard:(id)sender {
+    UIViewController *anotherController = [[UIStoryboard storyboardWithName:@"DSAnotherStoryboard" bundle:nil] instantiateInitialViewController];
+    [self.navigationController pushViewController:anotherController animated:YES];
 }
 
 @end
