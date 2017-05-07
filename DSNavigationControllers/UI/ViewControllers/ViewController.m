@@ -11,6 +11,8 @@
 #import "DSViewControllerFirst.h"
 #import "DSViewControllerSecond.h"
 
+static NSString *DSShowTitleFirstController = @"DSViewControllerFirst";
+
 @interface ViewController ()
 
 @end
@@ -19,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = NSStringFromClass(self.class);
 }
 
 - (IBAction)showFromXib:(id)sender {
@@ -30,13 +33,15 @@
 
 - (IBAction)showAnotherStoryboard:(id)sender {
     UIViewController *anotherController = [[UIStoryboard storyboardWithName:@"DSAnotherStoryboard" bundle:nil] instantiateInitialViewController];
-    [self.navigationController pushViewController:anotherController animated:YES];
     anotherController.title = NSStringFromClass(anotherController.class);
+    [self.navigationController pushViewController:anotherController animated:YES];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    id destinationController = segue.destinationViewController;
-    destinationController.titele =
+    NSString *segueIdentifier = segue.identifier;
+    if ([segueIdentifier isEqualToString:DSShowTitleFirstController]) {
+        segue.destinationViewController.title = NSStringFromClass(segue.destinationViewController.class);
+    }
 }
 
 @end

@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   // self.tabBarController.navigationController.navigationBarHidden = YES;
+    self.tabBarController.navigationController.navigationBarHidden = YES;
 }
 
 

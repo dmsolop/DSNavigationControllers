@@ -7,6 +7,9 @@
 //
 
 #import "DSAnotherRootViewController.h"
+#import "DSAnotherAfterRootViewController.h"
+
+#import "UIStoryboard+DSExtension.h"
 
 @interface DSAnotherRootViewController ()
 
@@ -20,7 +23,16 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
-   // self.tabBarController.navigationController.navigationBarHidden = NO;
+   self.tabBarController.navigationController.navigationBarHidden = NO;
+}
+
+- (IBAction)pushAfterRoot:(UIButton *)sender {
+
+    DSAnotherAfterRootViewController *anotherController = [[UIStoryboard another] viewControllerFromClass:[DSAnotherAfterRootViewController class]];
+    
+    anotherController.title = NSStringFromClass([anotherController class]);
+    [self.navigationController pushViewController:anotherController animated:YES];
+    
 }
 
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DSModalViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *lableForTitle;
 
 @end

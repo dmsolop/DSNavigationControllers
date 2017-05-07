@@ -7,6 +7,10 @@
 //
 
 #import "DSAnotherViewController.h"
+#import "DSTabBarController.h"
+#import "DSOrangeViewController.h"
+
+#import "UIStoryboard+DSExtension.h"
 
 @interface DSAnotherViewController ()
 
@@ -26,6 +30,13 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+- (IBAction)pushTabbar:(UIButton *)sender {
+
+    DSTabBarController *anotherController = [[UIStoryboard another] viewControllerFromClass:[DSTabBarController class]];
+    anotherController.title = NSStringFromClass([DSTabBarController class]);
+    [self.navigationController pushViewController:anotherController animated:YES];
+
+}
 
 
 @end

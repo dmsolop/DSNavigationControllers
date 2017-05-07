@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:YES];
+    self.lableForTitle.text = self.title;
+}
+
 - (IBAction)actionBackToFirstVC:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

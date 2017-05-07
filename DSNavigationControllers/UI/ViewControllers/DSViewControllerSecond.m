@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = [NSString stringWithFormat:@"%@", self.class];
+  //  self.navigationItem.title = [NSString stringWithFormat:@"%@", self.class];
 }
 - (IBAction)backToRootAction:(UIButton *)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];
